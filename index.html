@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natal Solidário do Pancinha 2026 - A Magia do Natal é Feita por Nós</title>
+  <meta name="description" content="Participe da campanha Natal Solidário do Pancinha 2026. Doe cestas básicas e brinquedos para levar esperança e sorrisos às crianças e famílias que mais precisam.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧸</text></svg>">
+
+  <!-- Google Fonts: Outfit (moderno), Cinzel (elegante/clássico) e Caveat (polaroid manuscrito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. CABEÇALHO (HEADER)
+       ======================================================================== -->
+  <header class="site-header" id="inicio">
+    <div class="header-container container">
+      <!-- Logotipo com ícone de ursinho natalino -->
+      <a href="#inicio" class="logo" aria-label="Natal Solidário do Pancinha 2026">
+        <div class="logo-badge">
+          🧸
+          <span class="santa-hat-icon">🎅</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">NATAL SOLIDÁRIO <span>DO PANCINHA</span></span>
+          <span class="logo-subtitle">Edição 2026 • Blumenau - SC</span>
+        </div>
+      </a>
+
+      <!-- Botão Hambúrguer para Mobile -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu de Navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu de Navegação à Direita -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#inicio" class="nav-link">INÍCIO</a></li>
+          <li><a href="#sobre" class="nav-link">SOBRE O EVENTO</a></li>
+          <li><a href="#doar" class="nav-link highlight">DOAR AGORA</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contato" class="nav-link">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cordão de Luzinhas Decorativas logo abaixo do Header -->
+  <div class="lights-garland" aria-hidden="true"></div>
+
+  <main>
+    <!-- ======================================================================
+         2. SEÇÃO HERO (PRINCIPAL)
+         ====================================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Lado Esquerdo: Textos & Chamada -->
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span>📍</span> Blumenau - Santa Catarina • Campanha 2026
+            </div>
+            <h1 class="hero-title">
+              <span class="title-gold">A MAGIA DO NATAL</span>
+              <span class="title-white">É FEITA POR NÓS!</span>
+            </h1>
+            <p class="hero-subtitle">
+              Junte-se a nós em <strong>Blumenau - Santa Catarina</strong> para levar alegria, esperança e um sorriso a quem mais precisa. 
+              Sua solidariedade transforma vidas e acende a verdadeira luz do Natal.
+            </p>
+            <div class="hero-actions">
+              <a href="#doar" class="btn-primary">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                FAÇA SUA DOAÇÃO
+              </a>
+              <a href="#sobre" class="btn-secondary">
+                Conheça Nossa Causa ↓
+              </a>
+            </div>
+
+            <!-- Indicadores de impacto da campanha -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">+1.000</span>
+                <span class="stat-label">Crianças Atendidas</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">+850</span>
+                <span class="stat-label">Cestas Entregues</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">16 Anos</span>
+                <span class="stat-label">Espalhando Amor</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lado Direito: Carrossel com Transição Suave das Imagens -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-frame hero-slider" id="hero-slider">
+              <div class="hero-slide active">
+                <img 
+                  src="assets/images/hero-slide-1.jpg" 
+                  alt="Papai Noel do Pancinha entregando brinquedos em Blumenau - SC"
+                  loading="eager"
+                >
+              </div>
+              <div class="hero-slide">
+                <img 
+                  src="assets/images/hero-slide-2.jpg" 
+                  alt="Equipe de voluntários e Papai Noel em ação solidária em Blumenau"
+                  loading="lazy"
+                >
+              </div>
+              <div class="hero-slide">
+                <img 
+                  src="assets/images/hero-slide-3.jpg" 
+                  alt="Comunidade reunida com Papai Noel nas ruas de Blumenau - SC"
+                  loading="lazy"
+                >
+              </div>
+              <div class="hero-slide">
+                <img 
+                  src="assets/images/hero-slide-4.jpg" 
+                  alt="Menina com presente e Papai Noel do Pancinha"
+                  loading="lazy"
+                >
+              </div>
+              <div class="hero-slide">
+                <img 
+                  src="assets/images/hero-slide-5.jpg" 
+                  alt="Papai Noel com bebê e voluntário em Blumenau"
+                  loading="lazy"
+                >
+              </div>
+              <div class="hero-slide">
+                <img 
+                  src="assets/images/hero-slide-6.jpg" 
+                  alt="Entrega de presentes à família com bebê em Blumenau"
+                  loading="lazy"
+                >
+              </div>
+
+              <!-- Indicadores / Dots do Slider -->
+              <div class="slider-dots" id="slider-dots">
+                <span class="dot active" data-index="0" aria-label="Imagem 1"></span>
+                <span class="dot" data-index="1" aria-label="Imagem 2"></span>
+                <span class="dot" data-index="2" aria-label="Imagem 3"></span>
+                <span class="dot" data-index="3" aria-label="Imagem 4"></span>
+                <span class="dot" data-index="4" aria-label="Imagem 5"></span>
+                <span class="dot" data-index="5" aria-label="Imagem 6"></span>
+              </div>
+            </div>
+            <div class="hero-badge-floating">
+              <span>🎁</span> 100% Destinado às Famílias de Blumenau
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cordão de Luzinhas no topo da Seção Sobre Nossa Missão -->
+    <div class="lights-garland" aria-hidden="true"></div>
+
+    <!-- ======================================================================
+         3. SEÇÃO "SOBRE NOSSA MISSÃO"
+         ====================================================================== -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-header">
+          <span class="section-tag">História & Propósito • Blumenau - SC</span>
+          <h2 class="section-title">16 ANOS DE AMOR E COMPAIXÃO</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card com Fundo Verde Translúcido -->
+          <div class="about-card">
+            <h3 class="about-card-title">
+              <span>🎄</span> SOBRE NOSSA MISSÃO
+            </h3>
+            <p>
+              Há <strong>16 anos</strong>, nossa comunidade de <strong>Blumenau - Santa Catarina</strong> se une com um único propósito: fazer o Natal de centenas de famílias mais feliz, acolhedor e cheio de dignidade. O projeto <strong>Natal Solidário do Pancinha</strong> nasceu do sonho de que nenhuma criança deveria passar a noite de Natal sem um presente e nenhuma mesa deveria ficar sem o pão.
+            </p>
+            <p>
+              Graças a doadores voluntários e aos nossos pontos de coleta espalhados por Blumenau, arrecadamos cestas de alimentos de qualidade, brinquedos pedagógicos, kits de guloseimas e proporcionamos um dia repleto de abraços, brincadeiras e a visita do nosso Papai Noel comunitário.
+            </p>
+            <p>
+              Cada centavo doado é revertido integralmente em compras coletivas com fornecedores locais, garantindo os melhores preços e máxima transparência a todos os colaboradores.
+            </p>
+
+            <div class="mission-highlights">
+              <div class="highlight-box">
+                <span class="highlight-icon">⭐</span>
+                <span class="highlight-text">Transparência Total com Prestação de Contas</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-icon">🧸</span>
+                <span class="highlight-text">Brinquedos Novos para Crianças Carentes</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-icon">🍲</span>
+                <span class="highlight-text">Cestas de Alimentos Fartas e Saudáveis</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-icon">❤️</span>
+                <span class="highlight-text">Voluntariado Ativo e Amor ao Próximo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Composição de Fotos Polaroid -->
+          <div class="polaroids-wrapper" aria-label="Galeria de fotos das edições anteriores">
+            <!-- Polaroid 1 -->
+            <div class="polaroid-card polaroid-1">
+              <img 
+                src="assets/images/polaroid-1.jpg" 
+                alt="Menina sorridente recebendo presente do Papai Noel do Pancinha"
+                loading="lazy"
+              >
+              <div class="polaroid-caption">Alegria que Transforma ❤️</div>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="polaroid-card polaroid-2">
+              <img 
+                src="assets/images/polaroid-2.jpg" 
+                alt="Papai Noel com bebê e voluntário do projeto"
+                loading="lazy"
+              >
+              <div class="polaroid-caption">Carinho & Acolhimento ✨</div>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="polaroid-card polaroid-3">
+              <img 
+                src="assets/images/polaroid-3.jpg" 
+                alt="Papai Noel entregando presentes à família com bebê"
+                loading="lazy"
+              >
+              <div class="polaroid-caption">Esperança Real 🎁</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SEÇÃO DE DOAÇÃO (DOAR AGORA)
+         ====================================================================== -->
+    <section class="donation-section" id="doar">
+      <div class="container">
+        <div class="donation-header">
+          <span class="section-tag">Contribua em Segundos</span>
+          <h2 class="section-title">SUA AJUDA CHEGA ONDE É MAIS PRECISO</h2>
+        </div>
+
+        <!-- Card Centralizado com Fundo Creme/Amarelo Claro -->
+        <div class="donation-card">
+          <!-- Lado Esquerdo: QR Code e Chave Pix -->
+          <div class="donation-left">
+            <span class="qr-badge">PIX INSTANTÂNEO</span>
+            
+            <div class="qr-box">
+              <img src="assets/images/qr-code-pix.jpg" alt="QR Code Pix do Natal Solidário do Pancinha - CNPJ: 64.859.843/0001-20">
+            </div>
+
+            <p class="scan-title"><strong>Escaneie para doar via Pix</strong></p>
+            
+            <div class="cnpj-label">
+              <span>Chave:</span>
+              <strong>CNPJ: 64.859.843/0001-20</strong>
+            </div>
+
+            <button type="button" class="btn-copy-pix" id="btn-copy-pix" aria-label="Copiar Chave Pix CNPJ">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copiar Chave Pix
+            </button>
+          </div>
+
+          <!-- Lado Direito: Instruções Passo a Passo -->
+          <div class="donation-right">
+            <h3 class="donation-inst-title">
+              <span>✨</span> DOE VIA PIX
+            </h3>
+            <p class="donation-inst-subtitle">
+              Siga os passos abaixo no aplicativo do seu banco preferido:
+            </p>
+
+            <div class="steps-list">
+              <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                  <h4>Abra o aplicativo do seu Banco</h4>
+                  <p>Acesse sua conta em qualquer banco (Nubank, Inter, Itaú, Bradesco, BB, Caixa, etc.).</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                  <h4>Escolha a Área Pix</h4>
+                  <p>Selecione a opção <strong>"Pagar com QR Code"</strong> e aponte a câmera para a imagem ao lado, ou use a opção <strong>"Pix Copia e Cola"</strong> com o CNPJ.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                  <h4>Confirme o Favorecido e o Valor</h4>
+                  <p>Verifique os dados da campanha <strong>Natal Solidário do Pancinha</strong> e digite o valor que o seu coração desejar doar.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-text">
+                  <h4>Finalize e Espalhe a Magia</h4>
+                  <p>Pronto! Sua doação já estará garantindo um prato cheio e o brilho nos olhos de uma criança neste Natal.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sugestões de Valores -->
+            <div class="donation-tiers">
+              <span class="tiers-label">Sugestões de doação:</span>
+              <div class="tiers-grid">
+                <div class="tier-pill">
+                  <span class="tier-val">R$ 25</span>
+                  <span class="tier-desc">Kit Guloseimas</span>
+                </div>
+                <div class="tier-pill">
+                  <span class="tier-val">R$ 50</span>
+                  <span class="tier-desc">1 Brinquedo Novo</span>
+                </div>
+                <div class="tier-pill">
+                  <span class="tier-val">R$ 100</span>
+                  <span class="tier-desc">Cesta Completa</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SEÇÃO DE PERGUNTAS FREQUENTES (FAQ)
+         ====================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="about-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Tire Suas Dúvidas</span>
+          <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Como funciona a doação e para onde vai o valor?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Toda a arrecadação é 100% direcionada para compras de itens de alimentação de primeira linha, panetones e brinquedos novos. Não temos gastos administrativos: toda a logística é realizada por voluntários dedicados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>📍 Onde são os pontos de coleta de alimentos e brinquedos em Blumenau - SC?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Você pode entregar doações de alimentos não perecíveis e brinquedos (novos ou em ótimo estado) diretamente em nossos <strong>5 pontos de coleta oficiais em Blumenau - Santa Catarina</strong>:</p>
+              <div class="collection-points-grid">
+                <div class="point-card">
+                  <div class="point-icon">🥖</div>
+                  <div class="point-info">
+                    <strong>Padaria e Restaurante Bublitz</strong>
+                    <span>Rua Doutor Pedro Zimmermann, 7859 - Itoupava Central, Blumenau - SC</span>
+                  </div>
+                </div>
+                <div class="point-card">
+                  <div class="point-icon">🥐</div>
+                  <div class="point-info">
+                    <strong>Padaria e Confeitaria Castelinho</strong>
+                    <span>Rua Amazonas, 930 - Garcia, Blumenau - SC</span>
+                  </div>
+                </div>
+                <div class="point-card">
+                  <div class="point-icon">🛒</div>
+                  <div class="point-info">
+                    <strong>Mercado Nosso Ponto</strong>
+                    <span>Rua Gustavo Zimmermann, 4044 - Itoupava Central, Blumenau - SC</span>
+                  </div>
+                </div>
+                <div class="point-card">
+                  <div class="point-icon">🏷️</div>
+                  <div class="point-info">
+                    <strong>Prioridade 10 Blumenau - Itoupava Central</strong>
+                    <span>Rua Dr. Pedro Zimmermann, 5986 - Itoupava Central, Blumenau - SC</span>
+                  </div>
+                </div>
+                <div class="point-card">
+                  <div class="point-icon">🧸</div>
+                  <div class="point-info">
+                    <strong>Kimania</strong>
+                    <span>Rua Doutor Pedro Zimmermann, 3380 - Itoupavazinha, Blumenau - SC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Onde as cestas e brinquedos são entregues?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>A campanha acontece integralmente em <strong>Blumenau - Santa Catarina</strong>! As entregas acontecem em comunidades vulneráveis, instituições de acolhimento infantil e bairros periféricos mapeados da nossa cidade (como Itoupava Central, Progresso, Garcia e região). O evento conta com distribuição das cestas e a chegada do Papai Noel levando amor e brinquedos a todas as crianças.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Até quando posso realizar a minha doação?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Nossa campanha aceita doações até <strong>20 de dezembro de 2026</strong>. Esse prazo garante tempo hábil para aquisição de produtos frescos e montagem cuidadosa das cestas antes da véspera de Natal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Posso doar como empresa ou solicitar recibo?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Empresas parceiras podem apoiar tanto via Pix quanto com a doação direta de lotes de produtos. Basta entrar em contato pelo WhatsApp <strong>+55 47 99109-2967</strong> para alinharmos os detalhes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       6. RODAPÉ (FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Lado Esquerdo: Contato WhatsApp -->
+        <div class="footer-contact">
+          <h4>CONTATO</h4>
+          <a href="https://wa.me/5547991092967?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20Natal%20Solid%C3%A1rio%20do%20Pancinha%202026" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="contact-link"
+             aria-label="Falar com o suporte no WhatsApp">
+            <svg class="whatsapp-icon-svg" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.146-.086-.285-.093-.654-.234-1.147-.447-2.002-.868-3.308-2.893-3.409-3.028-.1-.134-.812-1.082-.812-2.064 0-.982.51-1.465.69-1.666.182-.202.398-.252.531-.252.133 0 .265.002.382.008.125.006.292-.047.457.35.17.408.577 1.409.627 1.512.051.103.085.224.017.359-.068.134-.102.219-.203.337-.101.119-.213.265-.304.356-.102.102-.208.213-.089.417.119.204.529.873 1.135 1.413.782.696 1.439.912 1.644 1.014.204.102.323.085.441-.051.119-.136.51-.594.646-.798.136-.204.272-.17.458-.102.186.068 1.17.552 1.373.654.203.102.339.153.39.237.051.085.051.491-.093.896z"/>
+            </svg>
+            +55 47 99109-2967 (Dúvidas?)
+          </a>
+        </div>
+
+        <!-- Centro: Redes Sociais & Direitos Autorais -->
+        <div class="footer-center">
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/1C9GHJpeT5/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook da Campanha Natal do Pancinha">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/nataldopancinha?stkn=MTZlNzcxcWt0NzR0Yw==" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram @nataldopancinha">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+
+          <p class="footer-copy">
+            <a href="https://www.instagram.com/nataldopancinha?stkn=MTZlNzcxcWt0NzR0Yw==" target="_blank" rel="noopener noreferrer" style="color:var(--gold-light);font-weight:700;display:inline-flex;align-items:center;gap:0.3rem;margin-bottom:0.4rem;">
+              @nataldopancinha
+            </a><br>
+            © 2026 Natal Solidário do Pancinha.<br>
+            Todos os direitos reservados. Projeto social sem fins lucrativos.
+          </p>
+        </div>
+
+        <!-- Lado Direito: Mensagem de Agradecimento -->
+        <div class="footer-thanks">
+          <span class="thanks-heart">❤️</span>
+          <p>"Agradecemos de coração o seu apoio!"</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Feito com amor e carinho pela comunidade. Unidos por um Natal iluminado para todas as crianças! 🎄
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       7. ELEMENTOS FLUTUANTES (FIXOS NA TELA)
+       ======================================================================== -->
+
+  <!-- Gatilho Flutuante para Abrir a Janela do Chatbot -->
+  <button class="floating-chat-trigger" id="floating-chat-trigger" aria-label="Abrir Assistente Natalina">
+    🦌
+    <span class="chat-trigger-badge" id="chat-trigger-badge">1</span>
+  </button>
+
+  <!-- Janela do Chatbot (Assistente Natalina) -->
+  <aside class="chatbot-window collapsed" id="chatbot-window" aria-label="Assistente Natalina do Pancinha">
+    <!-- Cabeçalho do Chat -->
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-header-icon">🦌</div>
+        <div class="chat-header-text">
+          <h3>ASSISTENTE NATALINA DO PANCINHA</h3>
+          <span class="chat-status">
+            <span class="status-dot"></span> Online agora
+          </span>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chat-close-btn" aria-label="Fechar Janela do Chat">&times;</button>
+    </div>
+
+    <!-- Área de Mensagens -->
+    <div class="chat-body" id="chat-body">
+      <!-- Mensagem de Boas-Vindas do Bot -->
+      <div class="chat-msg bot">
+        <div class="chat-bubble">
+          Olá! Como posso ajudar você hoje? 🎄✨ Escolha uma pergunta rápida abaixo ou escreva sua dúvida:
+        </div>
+        <span class="chat-time">Hoje</span>
+      </div>
+
+      <!-- Botões de Perguntas Frequentes Requisitados -->
+      <div class="chat-quick-actions">
+        <button class="quick-btn" data-faq="faq1">
+          <span>Como funciona a doação?</span>
+          <span>→</span>
+        </button>
+        <button class="quick-btn" data-faq="faq_coleta">
+          <span>📍 Pontos de coleta em Blumenau</span>
+          <span>→</span>
+        </button>
+        <button class="quick-btn" data-faq="faq2">
+          <span>Onde as cestas são entregues?</span>
+          <span>→</span>
+        </button>
+        <button class="quick-btn" data-faq="faq3">
+          <span>Até quando posso doar?</span>
+          <span>→</span>
+        </button>
+      </div>
+
+      <!-- Indicador de Digitação -->
+      <div class="typing-indicator" id="typing-indicator">
+        <div class="typing-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé do Chat (Input de Texto) -->
+    <div class="chat-footer">
+      <input 
+        type="text" 
+        id="chat-input" 
+        class="chat-input" 
+        placeholder="Digite sua dúvida aqui..." 
+        aria-label="Digite sua mensagem para a Assistente Natalina"
+      >
+      <button type="button" id="chat-send-btn" class="chat-send-btn" aria-label="Enviar Mensagem">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5547991092967?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Natal%20Solid%C3%A1rio%20do%20Pancinha%202026%20e%20gostaria%20de%20ajudar!" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="floating-whatsapp-btn" 
+     id="floating-whatsapp-btn" 
+     aria-label="Conversar no WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.146-.086-.285-.093-.654-.234-1.147-.447-2.002-.868-3.308-2.893-3.409-3.028-.1-.134-.812-1.082-.812-2.064 0-.982.51-1.465.69-1.666.182-.202.398-.252.531-.252.133 0 .265.002.382.008.125.006.292-.047.457.35.17.408.577 1.409.627 1.512.051.103.085.224.017.359-.068.134-.102.219-.203.337-.101.119-.213.265-.304.356-.102.102-.208.213-.089.417.119.204.529.873 1.135 1.413.782.696 1.439.912 1.644 1.014.204.102.323.085.441-.051.119-.136.51-.594.646-.798.136-.204.272-.17.458-.102.186.068 1.17.552 1.373.654.203.102.339.153.39.237.051.085.051.491-.093.896z"/>
+    </svg>
+    <span>Conversar</span>
+  </a>
+
+  <!-- Toast Notification para Cópia de Chave Pix -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite">
+    Chave Pix copiada com sucesso!
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/snowflakes.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
